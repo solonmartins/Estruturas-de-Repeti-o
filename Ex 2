@@ -1,0 +1,16 @@
+print ('_______________________________')
+pergunta_usuario = input ('Digite o nome do seu usuario: ')
+pergunta_senha = input ('Digite sua senha: ')
+print ('_______________________________')
+
+if pergunta_usuario != pergunta_senha:
+    print ('Seus dados foram cadastrados!')
+
+while pergunta_senha == pergunta_usuario:
+    pergunta_senha_novamente = input ('Seu nome de usuário não pode ser a mesma senha. Digite novamente outra senha: ')
+
+    print('_______________________________')
+
+    if pergunta_senha_novamente != pergunta_usuario:
+        print ('Seus dados foram cadastrados!')
+        break
