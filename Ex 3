@@ -1,0 +1,99 @@
+###########################################################################
+
+print ('\033[0:33m___________________________________________________________')
+pergunta_nome = input ('\033[0:32mDigite seu nome de usuário ao lado (mínimo 3 letras): ')
+qtd_caracteres = len(pergunta_nome)
+
+if pergunta_nome >= str(3):
+    print('Seu nome de usuário é:', pergunta_nome)
+print ('\033[0:33m___________________________________________________________')
+
+while str (qtd_caracteres) < str (3):
+    resposta_caracteres = input ('\033[0:32mUsuário inválido. Digite um usuário acima de 3 caractéres: ')
+    caracteres = len(resposta_caracteres)
+    if str(caracteres) >= str (3):
+        print ('Seu nome de usuário é:', resposta_caracteres)
+        print('\033[0:33m___________________________________________________________')
+        break
+
+###########################################################################
+
+pergunta_idade = input ('\033[0:32mDigite sua idade (apenas com números): ')
+
+if int (pergunta_idade) > 0 and int (pergunta_idade) < 150:
+    resposta_idade = f'Sua idade é: {pergunta_idade}'
+    print (resposta_idade)
+print('\033[0:33m___________________________________________________________')
+
+while int (pergunta_idade) < 0 or int (pergunta_idade) > 150:
+    inputacao = input ('\033[0:32mIdade inválida. Digite uma que seja MAIOR que 0 e MENOR que 150: ')
+    if int (inputacao) > 0 and int (inputacao) < 150:
+        print ('Sua idade é:', inputacao)
+        print('\033[0:33m___________________________________________________________')
+        break
+
+###########################################################################
+
+pergunta_salario = input ('\033[0:32mDigite seu salário (apenas com números): ')
+
+if float (pergunta_salario) >= 0:
+    print ('\033[0:32mSeu salário é:', pergunta_salario)
+print('\033[0:33m___________________________________________________________')
+
+while float(pergunta_salario) < 0:
+     while_salario = input ('\033[0:32mSalário inválido. Digite um válido: ')
+     if float (while_salario) >= 0:
+         print ('\033[0:32mSeu salário é:',while_salario)
+         print('\033[0:33m___________________________________________________________')
+         break
+
+###########################################################################
+
+pergunta_sexo = input ('\033[0:32mDigite seu sexo (F para feminino, e M para masculino): ').upper()
+
+if pergunta_sexo == 'F':
+    print ('Seu sexo é: FEMININO.')
+
+elif pergunta_sexo == 'M':
+    print ('Seu sexo é MASCULINO.')
+print('\033[0:33m___________________________________________________________')
+
+while pergunta_sexo != 'M' and pergunta_sexo != 'F':
+    while_sexo = input ('\033[0:32mSexo inválido. Digite F para FEMININO ou M para MASCULINO: ').upper()
+    if while_sexo == 'M':
+        print ('Seu sexo é MASCULINO.')
+        print('\033[0:33m___________________________________________________________')
+        break
+    elif while_sexo == 'F':
+        print ('Seu sexo é FEMININO.')
+        print('\033[0:33m___________________________________________________________')
+        break
+
+###########################################################################
+
+print ('> ESTADO CÍVIL:')
+print ('1) Solteiro. \n2) Casado. \n3) Viúvo. \n4) Divorciado. ')
+print('\033[0:33m___________________________________________________________')
+
+pergunta_estado_civil = input ('\033[0:32mDigite ao lado, seu estado cívil, de acordo com a tabela: ')
+
+if pergunta_estado_civil == '1':
+    resposta_estado_civil_1 = f'Seu estado cívil é: SOLTEIRO.'
+    print (resposta_estado_civil_1)
+
+elif pergunta_estado_civil == '2':
+    resposta_estado_civil_2 = f'Seu estado cívil é: CASADO.'
+    print (resposta_estado_civil_2)
+
+elif pergunta_estado_civil == '3':
+    resposta_estado_civil_3 = f'Seu estado cívil é: Viúvo.'
+
+elif pergunta_estado_civil == '4':
+    resposta_estado_civil_4 = f'Seu estado cívil é: DIVORCIADO'
+    print (resposta_estado_civil_4)
+
+print('\033[0:33m___________________________________________________________')
+
+###########################################################################
+
+print ('TODOS OS SEUS DADOS FORAM CADASTRADOS COM SUCESSO!')
