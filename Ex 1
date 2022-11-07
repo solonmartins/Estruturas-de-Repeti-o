@@ -1,0 +1,10 @@
+pergunta_nota = input ('Qual sua nota? Represente com números entre 0 à 10: ')
+
+if float (pergunta_nota) <= 10:
+    print ('Sua nota é:',pergunta_nota)
+while float (pergunta_nota) > 10:
+    pergunta = input ('Sua nota não está entre 0 à 10. Digite um número abaixo disso: ')
+    if float (pergunta) <= 10:
+        print ('Sua nota é:', pergunta)
+        break
+        
