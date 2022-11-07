@@ -73,7 +73,6 @@ while pergunta_sexo != 'M' and pergunta_sexo != 'F':
 
 print ('> ESTADO CÍVIL:')
 print ('1) Solteiro. \n2) Casado. \n3) Viúvo. \n4) Divorciado. ')
-print('\033[0:33m___________________________________________________________')
 
 pergunta_estado_civil = input ('\033[0:32mDigite ao lado, seu estado cívil, de acordo com a tabela: ')
 
@@ -91,6 +90,21 @@ elif pergunta_estado_civil == '3':
 elif pergunta_estado_civil == '4':
     resposta_estado_civil_4 = f'Seu estado cívil é: DIVORCIADO'
     print (resposta_estado_civil_4)
+
+while pergunta_estado_civil != '1' and '2' and '3' and '4':
+    resposta_estado_civil_tente_novamente = input ('Opção inválida. Digite apenas as opções que estão na tabela ( 1 até 4): ')
+    if resposta_estado_civil_tente_novamente == '1':
+        print ('Seu estado cívil é: SOLTEIRO.')
+        break
+    elif resposta_estado_civil_tente_novamente == '2':
+        print ('Seu estado cívil é: CASADO.')
+        break
+    elif resposta_estado_civil_tente_novamente == '3':
+        print ('Seu estado cívil é: VIÚVO.')
+        break
+    elif resposta_estado_civil_tente_novamente == '4':
+        print ('Seu estado cívil é: DIVORCIADO.')
+        break
 
 print('\033[0:33m___________________________________________________________')
 
