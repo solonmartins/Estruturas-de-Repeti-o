@@ -1,0 +1,20 @@
+pergunta_num_1 = float(input('Digite o primeiro número: '))
+pergunta_num_2 = float(input('Digite o segundo número: '))
+pergunta_num_3 = float(input('Digite o terçeiro número: '))
+pergunta_num_4 = float(input('Digite o quarto número: '))
+pergunta_num_5 = float(input('Digite o quinto número: '))
+
+if pergunta_num_1 > pergunta_num_2 and pergunta_num_1 > pergunta_num_3 and pergunta_num_1 > pergunta_num_4 and pergunta_num_1 > pergunta_num_5:
+    print ('Número maior que os demais é o:', pergunta_num_1)
+
+elif pergunta_num_2 > pergunta_num_1 and pergunta_num_2 > pergunta_num_3 and pergunta_num_2 > pergunta_num_4 and pergunta_num_2 > pergunta_num_5:
+    print ('Número maior que os demais é o:', pergunta_num_2)
+
+elif pergunta_num_3 > pergunta_num_1 and pergunta_num_3 > pergunta_num_2 and pergunta_num_3 > pergunta_num_4 and pergunta_num_3 > pergunta_num_5:
+    print ('O número maior que os demais é o:', pergunta_num_3)
+
+elif pergunta_num_4 > pergunta_num_1 and pergunta_num_4 > pergunta_num_2 and pergunta_num_4 > pergunta_num_3 and pergunta_num_4 > pergunta_num_5:
+    print ('O número maior que os demais é o:', pergunta_num_4)
+
+elif pergunta_num_5 > pergunta_num_1 and pergunta_num_5 > pergunta_num_2 and pergunta_num_5 > pergunta_num_3 and pergunta_num_5 > pergunta_num_4:
+     print ('O número maior que os demais é o:',pergunta_num_5)
