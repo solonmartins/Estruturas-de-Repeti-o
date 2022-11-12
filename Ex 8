@@ -1,0 +1,11 @@
+pergunta_num_1 = float(input('Digite o primeiro número: '))
+pergunta_num_2 = float(input('Digite o segundo número: '))
+pergunta_num_3 = float(input('Digite o terçeiro número: '))
+pergunta_num_4 = float(input('Digite o quarto número: '))
+pergunta_num_5 = float(input('Digite o quinto número: '))
+
+soma = pergunta_num_1 + pergunta_num_2 + pergunta_num_3 + pergunta_num_4 + pergunta_num_5
+media = (pergunta_num_1 + pergunta_num_2 + pergunta_num_3 + pergunta_num_4 + pergunta_num_5) / 5
+
+resposta = f'A soma dos números escolhidos é: {soma}. E a media desses números é: {media}.'
+print (resposta)
